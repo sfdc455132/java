@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScrip</h1>
+    <script>
+        let email = 'jerry@gmail.com';
+        console.log(email);
+        console.log(typeof (email));
+        console.log(email.length);
+        console.log(email + '.tw');
+        console.log(email[email.length - 1])
+        console.log(email.toUpperCase());
+        console.log(email.toLowerCase());
+        console.log(email.indexOf('@'));
+        console.log(email.lastIndexOf('m'));
+        console.log(email.substring(0, 5));
+        console.log(email.replace('jerry', 'mario'));
+        console.log(email.includes('jerry'));
+        console.log('jerry' == 'jerry1');
+
+        for (let i = 0; i < email.length; i++) {
+            console.log(i, email[i])
+        }
+
+
+
+
+
+
+
+        const PI = 3.1415926;
+        let radius = prompt('請輸入半徑');
+        const area = radius * PI;
+
+        console.log(area, radius, typeof (radius));
+        document.write('半徑為:' + radius);
+        document.write('<h1>面積為' + area + '</h1>')
+
+        console.log(radius, typeof (radius))
+        alert('半徑為' + radius)
+
+    </script>
+</body>
+
+</html>
