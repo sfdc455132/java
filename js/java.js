@@ -121,12 +121,14 @@ const subtitle = document.querySelector('h2');
 subtitle.innerText = '大樂透開獎中';
 subtitle.innerHTML = `<h2><i>${subtitle.innerText}</i></h2>`;
 subtitle.style.backgroundColor = 'red';
-
+const lottoEl = document.querySelector('.lotto_number');
 const btm = document.querySelector('#starts');
 btm.addEventListener('click', () => {
     console.log('clicks!');
+
 });
-console.log()
+
+
 
 
 
