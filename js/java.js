@@ -125,8 +125,41 @@ const lottoEl = document.querySelector('.lotto_number');
 const btm = document.querySelector('#starts');
 btm.addEventListener('click', () => {
     console.log('clicks!');
+    const start = 1;
+    const end = 49;
+    let straa = '';
+    let stra = 0;
+    let number = 0;
+    let table = `<table border="1"><thead>
+        <th>期數</th>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+    </thead><tbody>`
 
-});
+    for (let j = 0; j < 10; j++) {
+        table += (`<tr><td>${j + 1}</td>`)
+        straa = ''
+        for (let i = 0; i < 6; i++) {
+            number = Math.floor(Math.random() * (end - start + 1) + start);
+            stra = `第${i + 1}個號碼:${number}`
+            //console.log(stra);
+            straa += (number + ' ')
+            table += `<td>${number}</td>`
+        }
+        //console.log(`第${j + 1}組號碼為:${straa}`)
+        //document.write(`<h2>第${j + 1}組號碼為:${straa}</h2>`)
+
+
+        table += `</tr>`
+    };
+    lottoEl.innerHTML = table
+})
+
+
 
 
 
